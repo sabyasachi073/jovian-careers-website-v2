@@ -8,21 +8,22 @@ JOBS = [{
   'id': 1,
   'title': 'Data Analyst',
   'location': 'Bengaluru, India',
-  'salary': 'Rs 10,00,000'
+  'salary': 'Rs. 10,00,000'
 }, {
   'id': 2,
   'title': 'Data Scientist',
   'location': 'Delhi, India',
-  'salary': 'Rs 15,00,000'
+  'salary': 'Rs. 15,00,000'
 }, {
   'id': 3,
   'title': 'Frontend Engineer',
   'location': 'Remote',
-  'salary': 'Rs 12,00,000'
+  'salary': 'Rs. 12,00,000'
 }, {
   'id': 4,
   'title': 'Backend Engineer',
   'location': 'San Francisco, USA',
+  'salary': '$120,000'
 }]
 
 
@@ -61,4 +62,16 @@ In Python ecosystem, its a standard that if we have a python project than we nee
 "Flask" is a development server and we can't use it for production.
 "gunicorn" is a production server for Python.
 Whenever we want to put any Flask applicaion into production, we need to use "gunicorn" library.
+'''
+'''
+Build command in Render:
+command>> pip intstall -r requirements.txt
+
+"-r requirements.txt" instructs pip to install all the libraries which in present in each line of the "requirements.txt" file.
+
+Start command in Render:
+command>> gunicorn file_to_be_executed:x
+[Here, x is the name of the actua; variable which contains the Flask application that we want to run. Here x is app.
+We are talking about this 'app' variable -> "app = Flask(__name__)"]
+For this project command>> gunicorn app:app
 '''
