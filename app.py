@@ -31,7 +31,7 @@ def hello_world():
   return render_template("home.html", jobs=JOBS, company_name='Jovian')
 
 
-@app.route("/jobs") # API route or endpoint
+@app.route("/jobs")  # API route or endpoint
 def list_jobs():
   return jsonify(JOBS)
 
@@ -51,5 +51,14 @@ The difference between creating a HTML endpoint and creating a JSON endpoint is 
 Note: To differentiate between HTML pages and non HTML pages we put '/api' before the pathname in the route. API don't return any HTML page rather it returns structured data in the form of JSON which than can be programmatically analyzed.
 
 API -> Application PRogramming Interface
+'''
+'''
+In order to deploy our website to "Render" we need to create a "requirements.txt" file.
 
+In Python ecosystem, its a standard that if we have a python project than we need to mention all the libraries and packages that our project needs in the file -> 'requirements.txt'
+'''
+'''
+"Flask" is a development server and we can't use it for production.
+"gunicorn" is a production server for Python.
+Whenever we want to put any Flask applicaion into production, we need to use "gunicorn" library.
 '''
