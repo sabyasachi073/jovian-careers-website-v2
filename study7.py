@@ -32,6 +32,26 @@ def show_job_json(id):
   return jsonify(job)
 
 
+'''
+@app.route("/job/<id>/apply")
+def applt_to_job(id):
+  # In the url what ever is present after '?' that can be accessed using "request" variable in flask
+  data = request.args 
+  
+  # The data that we received can be used to ->
+  #   > Store in the database
+  #   > Send an email
+  #   > Display an acknowledgement
+  
+  return jsonify(data)
+'''
+'''
+When a route used the method "post" than the route "/job/<id>/apply" expects data to be posted by the browser and not sent in the url. When the method is 'post' than nothing is captured in "request.args", as "request.args" captures the data from URL. The information submitted in the form is captured in the "request.form".
+
+When we send by post than nothing is present in URL shown in the URL but the information is posted.
+'''
+
+
 @app.route("/job/<id>/apply", methods=['post'])
 def apply_to_job(id):
   data = request.form
