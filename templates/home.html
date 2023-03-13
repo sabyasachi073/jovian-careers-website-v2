@@ -1,26 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <style>
-      #banner{
-        height: 360px;
-        width: 100%;
-        object-fit: cover;
-        margin-bottom: 16px;
-      }
-    </style>
+    {% include 'bootstrap.html' %}
     <title>Jovian Careers</title>
   </head>
   <body>
     {% include 'nav.html' %}
-      <img id="banner" class="img-fluid" src="https://jovian-careers-website.sabyasachisark4.repl.co/static/banner.jpg"/>
+    {% include 'banner.html' %}
     
     <div class="container">
       <h1 class="text-center mt-2 mb-4">
-        {{company_name}} Careers
+        Jovian Careers
       </h1>
       <div class="row mb-4">
         <div class="col-md-6">
@@ -39,6 +29,7 @@
       </div>
       <div class="text-center mt-4">
         <a href="mailto:hello@jovian.ai?subject=Question%20about%20Job%20Openings&body=My%20name%3A%20%3CYour%20name%3E%0D%0AMy%20question%3A%20%3CEnter%20your%20question%20here%3E" class="btn btn-primary btn-lg">Contact Us</a>
+        <!-- "mailto:" opens us the default mail program and it creates a new message with TO field already field We can go to the website "https://mailtolink.me/" for creating custom "mailto:" URL -->
       </div>
     </div>
     {% include 'footer.html' %}

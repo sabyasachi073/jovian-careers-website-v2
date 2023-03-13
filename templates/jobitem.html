@@ -13,10 +13,6 @@
     {% endif %}
   </div>
   <div class="col-2">
-    <a href="mailto:hello@jovian.ai?subject=Application%20for%20{{job['title']}}&body=My%20name%3A%20%3CYour%20name%3E%0D%0AMy%20Resume%20link%3A%20%3CResume%20link%3E%0D%0AMy%20LinkedIn%20link%3A%20%3CLinkedin%20link%3E" type="button" class="btn btn-outline-success">Apply</a>
+    <a href="/job/{{job['id']}}" type="button" class="btn btn-outline-success">Apply</a>
   </div>
 </div>
-<!-- 
-"mailto:" opens us the default mail program and it creates a new message with TO field already field 
-We can go to the website "https://mailtolink.me/" for creating custom "mailto:" URL
--->
