@@ -47,11 +47,11 @@ Anything that we put inside the static folder is called an asset
 '''
 When we say REST API or JSON API or API ENDPOINT then it means that our webserver is returning some information but not as HTML but as JSON which is also accessible and we can do anything with that
 
-The difference between creating a HTML endpoint and creating a JSON endpoint is that instead of rendering a template(in HTML endpoint) we are
+The difference between creating a HTML endpoint and creating a JSON endpoint is that instead of rendering a template(in HTML endpoint) we are rendering a JSON object
 
 Note: To differentiate between HTML pages and non HTML pages we put '/api' before the pathname in the route. API don't return any HTML page rather it returns structured data in the form of JSON which than can be programmatically analyzed.
 
-API -> Application PRogramming Interface
+API -> Application Programming Interface
 '''
 '''
 In order to deploy our website to "Render" we need to create a "requirements.txt" file.
@@ -67,11 +67,11 @@ Whenever we want to put any Flask applicaion into production, we need to use "gu
 Build command in Render:
 command>> pip intstall -r requirements.txt
 
-"-r requirements.txt" instructs pip to install all the libraries which in present in each line of the "requirements.txt" file.
+"-r requirements.txt" instructs pip to install all the libraries which is present in each line of the "requirements.txt" file.
 
 Start command in Render:
 command>> gunicorn file_to_be_executed:x
-[Here, x is the name of the actua; variable which contains the Flask application that we want to run. Here x is app.
+[Here, x is the name of the actual variable which contains the Flask application that we want to run. Here x is app.
 We are talking about this 'app' variable -> "app = Flask(__name__)"]
 For this project command>> gunicorn app:app
 '''

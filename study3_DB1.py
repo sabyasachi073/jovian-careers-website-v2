@@ -22,7 +22,7 @@ engine = create_engine(db_connection_string,
                          "ssl_ca": "/etc/ssl/cert.pem"
                        }})
 '''
-SQLAlchemy internally depending t=on which kind of database we want to connect to requires some libraries which can serve as a connector. SQLAlchemy can connect to many databases so it by default don't come with all the built-in connectors, so we need to separately install a connector based on which kind of database we are using.
+SQLAlchemy internally depending on which kind of database we want to connect to requires some libraries which can serve as a connector. SQLAlchemy can connect to many databases so it by default don't come with all the built-in connectors, so we need to separately install a connector based on which kind of database we are using.
 
 Here, since we are using mysql with "pymysql" as connector so we need to download the connector "pymysql"
 Command>> pip install pymysql

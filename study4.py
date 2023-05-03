@@ -19,5 +19,5 @@ def list_jobs():
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)
 '''
-After we have created our database in Planet Scale, wwe will try to connect to the database using "MySQL Workbench". "MySQL Workbench" is a downloadable tool that we can download on our computer to connect to the database that we created in the Planet Scale.
+After we have created our database in Planet Scale, we will try to connect to the database using "MySQL Workbench". "MySQL Workbench" is a downloadable tool that we can download on our computer to connect to the database that we created in the Planet Scale.
 '''

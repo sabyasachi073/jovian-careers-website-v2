@@ -34,7 +34,7 @@ def show_job_json(id):
 
 '''
 @app.route("/job/<id>/apply")
-def applt_to_job(id):
+def apply_to_job(id):
   # In the url what ever is present after '?' that can be accessed using "request" variable in flask
   data = request.args 
   
